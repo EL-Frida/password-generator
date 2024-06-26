@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password generator</h1>
+        <h2>Generate a</h2>
+        <h2 class="random-desc">random password</h2>
+        <h3>Never use an insecure password again</h3>
+
+
+        <fieldset>
+            <legend>Choose symbol and number if you want a more secure password</legend>
+
+            <div class="checkbox-div">
+                <input type="checkbox" id="symbol" name="symbol" checked class="selection" />
+                <label for="symbol">Symbol</label>
+            </div>
+
+            <div class="checkbox-div">
+                <input type="checkbox" id="number" name="number" checked class="selection" />
+                <label for="number">Number</label>
+            </div>
+            
+        </fieldset>
+
+        <button onclick="generatePassword()">Generate password</button>
+        
+        <hr />
+        <div class="generated">
+            <p id="first" onclick="copyToClipboard(this)"></p>
+            <p id="second" onclick="copyToClipboard(this)"></p>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
